@@ -40,19 +40,21 @@
             color: #fff;
         }
 
+        .hero, .about, .skills, .projects, .contact {
+            padding: 60px 40px;
+        }
+
         .hero {
             text-align: center;
-            padding: 100px 20px;
         }
 
-        .hero h2 {
-            font-size: 48px;
-            margin: 0;
+        .hero h2, .about h2, .skills h2, .projects h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
         }
 
-        .hero p {
-            font-size: 20px;
-            margin-top: 10px;
+        .hero p, .about p, .skills p {
+            font-size: 18px;
         }
 
         .btn {
@@ -66,8 +68,18 @@
             margin-top: 20px;
         }
 
-        .section {
-            padding: 60px 40px;
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill {
+            background: var(--lavender);
+            padding: 10px 20px;
+            border-radius: 20px;
+            color: #fff;
+            font-weight: 500;
         }
 
         .projects {
@@ -87,33 +99,56 @@
             margin-top: 0;
         }
 
-        footer {
-            text-align: center;
-            padding: 20px;
+        .contact {
             background: var(--lavender);
             color: #fff;
-            margin-top: 40px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 0;
+            padding: 20px;
+            font-size: 18px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            color: #fff;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>My Portfolio</h1>
+    <h1>About Me</h1>
     <nav>
-        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#contact">Contact Me</a>
     </nav>
 </header>
 
-<section class="hero" id="home">
-    <h2>Hello, I'm Kat ✨</h2>
-    <p>Front-End Developer | Creative Designer | Freelancer</p>
-    <a href="#projects" class="btn">View My Work</a>
+<section class="about" id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Kat, a Front-End Developer and Creative Designer passionate about building modern and aesthetic web experiences.</p>
 </section>
 
-<section class="section" id="projects">
+<section class="skills" id="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">React</span>
+        <span class="skill">UI/UX Design</span>
+    </div>
+</section>
+
+<section class="projects" id="projects">
     <h2>Projects</h2>
     <div class="projects">
         <div class="card">
@@ -131,8 +166,12 @@
     </div>
 </section>
 
-<footer id="contact">
+<section class="contact" id="contact">
     <p>Contact me at: yourname@email.com</p>
+</section>
+
+<footer>
+    <p>© 2025 Kat. All rights reserved.</p>
 </footer>
 
 </body>
