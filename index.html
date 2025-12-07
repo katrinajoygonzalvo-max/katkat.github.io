@@ -33,11 +33,22 @@
             font-size: 28px;
         }
 
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
         nav a {
-            margin: 0 15px;
             text-decoration: none;
             font-weight: 500;
             color: #fff;
+            padding: 8px 16px;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background: var(--lavender-dark);
         }
 
         .hero, .about, .skills, .projects, .contact {
@@ -55,17 +66,6 @@
 
         .hero p, .about p, .skills p {
             font-size: 18px;
-        }
-
-        .btn {
-            background: var(--lavender-dark);
-            padding: 12px 24px;
-            color: #fff;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-            display: inline-block;
-            margin-top: 20px;
         }
 
         .skills-list {
@@ -104,12 +104,7 @@
             color: #fff;
             border-radius: 12px;
             text-align: center;
-        }
-
-        .contact p {
-            margin: 0;
             padding: 20px;
-            font-size: 18px;
         }
 
         footer {
@@ -123,7 +118,7 @@
 <body>
 
 <header>
-    <h1>About Me</h1>
+    <h1>My Portfolio</h1>
     <nav>
         <a href="#about">About Me</a>
         <a href="#skills">Skills</a>
@@ -153,26 +148,4 @@
     <div class="projects">
         <div class="card">
             <h3>Project One</h3>
-            <p>Short description of your project.</p>
-        </div>
-        <div class="card">
-            <h3>Project Two</h3>
-            <p>Short description of your project.</p>
-        </div>
-        <div class="card">
-            <h3>Project Three</h3>
-            <p>Short description of your project.</p>
-        </div>
-    </div>
-</section>
-
-<section class="contact" id="contact">
-    <p>Contact me at: yourname@email.com</p>
-</section>
-
-<footer>
-    <p>© 2025 Kat. All rights reserved.</p>
-</footer>
-
-</body>
-</html>
+            <p>Short
